@@ -1,7 +1,10 @@
-
-
 function getFormvalue() {
-    const firstName = Document.getElementByTagName('input')[0].value
-	 const lastName = Document.getElementByTagName('input')[1].value
-	return firstName+lastName;
+   // Prevent form submission
+
+  const firstName = document.querySelector('input[name="fname"]').value;
+  const lastName = document.querySelector('input[name="lname"]').value;
+
+  alert(firstName + ' ' + lastName);
+  return firstName + ' ' + lastName;
 }
+
